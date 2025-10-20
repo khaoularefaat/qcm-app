@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QUIZ INFORMATIQUE - PHP</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <style>
+        body {background-image: url("assets/images/php.png");}
+    </style>
+</head>
+<body>
+    
+    <script src="assets/js/script.js"></script>
+    <div class="quiz-title">QUIZ PHP</div>
+
+
+    <form>
+        <!-- Question 1 -->
+        <hr>
+        <div class="question"><b>Question 1 :</b> Que signifie PHP ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix1" onclick="q1=1"> Personal Home Page</label>
+            <label><input type="radio" name="choix1" onclick="q1=0"> Pretext Hypertext Processor</label>
+        </div>
+
+        <!-- Question 2 -->
+        <hr>
+        <div class="question"><b>Question 2 :</b> Les fichiers PHP ont l’extension …. ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix2" onclick="q2=0"> .html</label>
+            <label><input type="radio" name="choix2" onclick="q2=1"> .php</label>
+        </div>
+
+        <!-- Question 3 -->
+        <hr>
+        <div class="question"><b>Question 3 :</b> Pour envoyer un email au format HTML en PHP il faut :</div>
+        <div class="options">
+            <label><input type="radio" name="choix3" onclick="q3=1"> Créer un header au content-type : text/html</label>
+            <label><input type="radio" name="choix3" onclick="q3=0"> Utiliser la fonction mail_html()</label>
+        </div>
+
+        <!-- Question 4 -->
+        <hr>
+        <div class="question"><b>Question 4 :</b> Lequel des éléments suivants doit être installé sur votre ordinateur pour exécuter des scripts PHP ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix4" onclick="q4=0"> Adobe Dreamweaver</label>
+            <label><input type="radio" name="choix4" onclick="q4=1"> PHP</label>
+        </div>
+
+        <!-- Question 5 -->
+        <hr>
+        <div class="question"><b>Question 5 :</b> Quelle version de PHP a introduit Try/catch Exception ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix5" onclick="q5=0"> PHP 4</label>
+            <label><input type="radio" name="choix5" onclick="q5=1"> PHP 5</label>
+        </div>
+
+        <!-- Question 6 -->
+        <hr>
+        <div class="question"><b>Question 6 :</b> Nous pouvons utiliser ___ pour commenter une seule ligne ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix6" onclick="q6=0"> /?</label>
+            <label><input type="radio" name="choix6" onclick="q6=1"> //</label>
+        </div>
+
+        <!-- Question 7 -->
+        <hr>
+        <div class="question"><b>Question 7 :</b> Laquelle parmi les instructions PHP suivantes va stocker 55 dans la variable nbr ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix7" onclick="q7=1"> $nbr = 55;</label>
+            <label><input type="radio" name="choix7" onclick="q7=0"> int $nbr = 55;</label>
+        </div>
+
+        <!-- Question 8 -->
+        <hr>
+        <div class="question"><b>Question 8 :</b> Qu'est-ce que PHP ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix8" onclick="q8=0"> C'est un langage de programmation compilé.</label>
+            <label><input type="radio" name="choix8" onclick="q8=1"> C'est un langage de scripts permettant de créer des sites Web dynamiques</label>
+        </div>
+
+        <!-- Question 9 -->
+        <hr>
+        <div class="question"><b>Question 9 :</b> Quel est l'usage le plus courant du PHP ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix9" onclick="q9=1"> Créer des sites Web dynamiques</label>
+            <label><input type="radio" name="choix9" onclick="q9=0"> Créer des sites Web statiques</label>
+        </div>
+
+        <!-- Question 10 -->
+        <hr>
+        <div class="question"><b>Question 10 :</b> Je veux créer une page Web contenant le titre suivant : "Ma première page Web". Aurai-je besoin du PHP ?</div>
+        <div class="options">
+            <label><input type="radio" name="choix10" onclick="q10=0"> Oui, puisque PHP permet de construire une page Web</label>
+            <label><input type="radio" name="choix10" onclick="q10=1"> Non, le HTML est suffisant</label>
+        </div>
+
+        <p align="center">
+            <input class="result-btn" type="button" value="Résultat" onclick="resultat()">
+        </p>
+    </form>
+
+</body>
+</html>

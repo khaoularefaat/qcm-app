@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>QUIZ</title>
+
+  <!-- ============================
+       CSS Styles for Buttons and Layout
+  ============================= -->
+  <style>
+    /* Reset default margins and paddings */
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Body styling: centered content with background */
+    body {
+      display: flex;
+      justify-content: center; /* center horizontally */
+      align-items: center;     /* center vertically */
+      height: 100vh;
+      background: #1f1d21;
+      background-image: url("https://thumbs.dreamstime.com/z/quiz-arri%C3%A8re-plan-des-questions-rep%C3%A8res-pour-la-conception-de-couverture-banni%C3%A8re-web-mod%C3%A8le-transparent-vectorielles-avec-212715723.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      gap: 20px;       /* spacing between buttons */
+      flex-wrap: nowrap; /* keep buttons on the same line */
+    }
+
+    /* ============================
+         Button Common Styles
+    ============================= */
+    button {
+      background: none;
+      width: 250px;
+      height: 110px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #45aaf2;
+      border: 4px solid #45aaf2;
+      position: relative;
+      cursor: pointer;
+      transition: 0.4s linear;
+      overflow: hidden;
+    }
+
+    button::before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 105px;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: 0.4s linear;
+    }
+
+    button:hover {
+      color: white;
+    }
+
+    button:hover::before {
+      width: 220px;
+    }
+
+    /* ============================
+         Button Colors
+    ============================= */
+    .blue::before {
+      background-color: #45aaf2;
+    }
+
+    .hotpink::before {
+      background-color: #cc6699;
+    }
+
+    .aqua::before {
+      background-color: #99ddff;
+    }
+
+    .chartreuse::before {
+      background-color: #45aaf2;
+    }
+
+    .olivedrab::before {
+      background-color: #9900cc;
+    }
+
+    .grey::before {
+      background-color: #aa80ff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ============================
+       Navigation Buttons on one line
+  ============================= -->
+  <button class="hotpink" onclick="window.location.href='ORACLE.html'">ORACLE</button>
+  <button class="blue" onclick="window.location.href='Réseau.html'">Réseau</button>
+  <button class="aqua" onclick="window.location.href='CSS.html'">CSS</button>
+  <button class="olivedrab" onclick="window.location.href='JAVA.html'">JAVA</button>
+  <button class="grey" onclick="window.location.href='UML.html'">UML</button>
+  <button class="chartreuse" onclick="window.location.href='PHP.html'">PHP</button>
+</body>
+
+</html>

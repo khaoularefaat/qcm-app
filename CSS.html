@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QUIZ INFORMATIQUE - CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <style>
+        body {background-image: url("assets/images/css.png");}
+    </style>
+</head>
+<body>
+    <script src="assets/js/script.js"></script>
+    <div class="quiz-title">QUIZ CSS</div>
+
+  <form>
+    <!-- Question 1 -->
+    <hr>
+    <div class="question">Question 1 :</div>
+    HTML est considéré comme ______ ?<br>
+    <input type="radio" name="choix1" onclick="q1=1"> Langage de balisage<br>
+    <input type="radio" name="choix1" onclick="q1=0"> Langage POO<br>
+
+    <!-- Question 2 -->
+    <hr>
+    <div class="question">Question 2 :</div>
+    HTML utilise des ______?<br>
+    <input type="radio" name="choix2" onclick="q2=0"> Balises prédéfinies<br>
+    <input type="radio" name="choix2" onclick="q2=1"> Balises fixes définies par le langage<br>
+
+    <!-- Question 3 -->
+    <hr>
+    <div class="question">Question 3 :</div>
+    Lequel des éléments suivants n’est pas un exemple de navigateur?<br>
+    <input type="radio" name="choix3" onclick="q3=0"> Netscape<br>
+    <input type="radio" name="choix3" onclick="q3=1"> Opéra<br>
+
+    <!-- Question 4 -->
+    <hr>
+    <div class="question">Question 4 :</div>
+    HTML a été proposé pour la première fois l’année ___?<br>
+    <input type="radio" name="choix4" onclick="q4=1"> 1990<br>
+    <input type="radio" name="choix4" onclick="q4=0"> 2000<br>
+
+    <!-- Question 5 -->
+    <hr>
+    <div class="question">Question 5 :</div>
+    Si nous souhaitons définir le style d’un seul élément, quel sélecteur CSS utiliserons-nous?<br>
+    <input type="radio" name="choix5" onclick="q5=0"> name<br>
+    <input type="radio" name="choix5" onclick="q5=1"> id<br>
+
+    <!-- Question 6 -->
+    <hr>
+    <div class="question">Question 6 :</div>
+    La balise HTML qui spécifie un style CSS intégré est appelée ____?<br>
+    <input type="radio" name="choix6" onclick="q6=0"> Modify<br>
+    <input type="radio" name="choix6" onclick="q6=1"> Style<br>
+
+    <!-- Question 7 -->
+    <hr>
+    <div class="question">Question 7 :</div>
+    Dans quelle balise HTML plaçons-nous le code JavaScript?<br>
+    <input type="radio" name="choix7" onclick="q7=0"> La balise rel<br>
+    <input type="radio" name="choix7" onclick="q7=1"> La balise script<br>
+
+    <!-- Question 8 -->
+    <hr>
+    <div class="question">Question 8 :</div>
+    Comment faire appel à une fonction nommée « sum »?<br>
+    <input type="radio" name="choix8" onclick="q8=0"> call sum()<br>
+    <input type="radio" name="choix8" onclick="q8=1"> sum()<br>
+
+    <!-- Question 9 -->
+    <hr>
+    <div class="question">Question 9 :</div>
+    Le fichier externe de JavaScript doit contenir la balise &lt;script&gt;?<br>
+    <input type="radio" name="choix9" onclick="q9=0"> Vrai<br>
+    <input type="radio" name="choix9" onclick="q9=1"> Faux<br>
+
+    <!-- Question 10 -->
+    <hr>
+    <div class="question">Question 10 :</div>
+    Quel est le bon endroit pour insérer un code JavaScript?<br>
+    <input type="radio" name="choix10" onclick="q10=0"> La section &lt;body&gt;<br>
+    <input type="radio" name="choix10" onclick="q10=1"> Les deux sections head et body sont correctes<br>
+
+    <!-- Submit Button -->
+    <p align="center">
+            <input class="result-btn" type="button" value="Résultat" onclick="resultat()">
+        </p>
+  </form>
+
+</body>
+</html>
+
